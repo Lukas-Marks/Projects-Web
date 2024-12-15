@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: novaFonte;
+}
+
+html, body{
+    height: 100%;
+    
+}
+
+@font-face {
+    font-family: novaFonte;
+    src: url('../Fonts/PoetsenOne-Regular.ttf');
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+div.header{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}
+
+.header img{
+ margin: 27px;   
+}
+
+.container-banner{
+    width: 100%;
+    height: 557px;
+    background-image: url('../images/header_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    padding: 10px;
+    width: 400px;
+    height: calc(100% + 0px);
+    background-color: white;
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: -20px;
+    border: 8px solid rgba(120, 120, 120, 0.5);;
+    background-clip: padding-box;
+
+}       
+
+.form h2{
+    text-align: center;
+    font-size: 21px;
+    color: #999;
+    font-weight: normal;
+    font-variant: small-caps;
+   
+}
+
+.input-container span, .form p{
+    display: inline-block;
+    width: 100%;
+    color: #BBB;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.form p{
+    margin: 50px 10px ;
+}
+
+.input-container input[type=text], input[type=email], input[type=tel]{
+   width: 100%;
+   height: 55px;
+   border: 1px solid #ccc; 
+   margin-top: 8px;
+}
+
+form input[type=submit]{
+    color: white;
+    font-size: 25px;
+    width: 280px;
+    height: 56px;
+    background-color: #363A6D;
+    cursor: pointer;
+    border-bottom: 4px solid #4A5097;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.input-submit{
+    text-align: center;
+}
+
+form input[type=submit]:hover{
+    background-color: #323665;
+}
+
+.container-list{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 619px;
+    padding: 30px;
+    margin-top: 40px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
+
+.container-list ul{
+    list-style-position: inside;
+}
+
+.container-list li {
+    color: white;
+    margin-top: 40px;
+}
+
+/* Sessao 1 */
+
+.container-2{
+    padding: 50px 0;
+    background-color: #DDD;
+    text-align: center;
+}
+
+.container-2 h2{
+    font-weight: normal;
+}
+
+.container-2 p{
+    max-width: 698px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.arrow{
+    position: relative;
+    top: 65px;
+    left: 50%;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/arrow.png');
+    background-size: cover;
+    
+}
+
+.section-1{
+padding: 70px 0;
+
+}
+
+.section-1 h2{
+    text-align: center;
+    color: #462663;
+    font-weight: normal;
+}
+
+.container-section{
+    margin-top: 40px;
+}
+
+.container-single{
+    float: left;
+    width: 33.3333%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container-single p{
+    padding: 10px;
+    text-align: left;
+}
+
+.container-single img{
+    width: 70px;
+}
+
+/* Rodapé */
+
+footer{
+    clear: both;
+    padding: 30px 0;
+    border-top: 2px solid black;
+    text-align: center;
+    color: #868181;
+}
+.line-division{
+
+}
