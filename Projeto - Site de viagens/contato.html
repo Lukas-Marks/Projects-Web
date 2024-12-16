@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Site</title>
+	<meta name="author" content="Lucas Marques"/>
+	<link rel="stylesheet" type="text/css" href="estilo/style3.css"/>
+	<link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0.maximum-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+<header>
+	<div class="container">
+		<div class="logo"><h2>Deveniday</h2></div>
+			<nav class="menu-desktop">
+				<ul>
+					<li><a href="index.html">Home</a></a></li>
+					<li><a class="selected" href="contato.html">Contato</a></a></li>
+					<li><a href="sobre.html">Quem somos</a></a></li>
+				</ul>
+			</nav><!-- Menu-desktop -->
+
+			<nav class="menu-mobile">
+				<h2><i class="fa fa-bars"></i></h2>
+				<ul>
+					<li><a class="selected" href="index.html">Home</a></a></li>
+					<li><a href="contato.html">Contato</a></a></li>
+					<li><a href="quem.html">Quem somos</a></a></li>
+				</ul>
+			</nav>
+
+			<div class="clear"></div><!-- clear -->
+	</div><!-- container -->
+</header>
+
+<section class="title-page">
+	<div class="overlay-title">
+	<div class="container">
+		<h2>Contato</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</div><!-- container -->
+</div><!-- overlay -->
+</section><!-- title-page -->
+
+<section class="contato">
+	<div class="container">
+		<div class="w60 formulario">
+			<h2>Entre em contato estaremos respondendo o mais breve possivel</h2>
+			<form method="post">
+				<div class="w50">
+					<input type="text" placeholder="Seu primeiro nome" name="">
+				</div><!-- w50 -->
+
+				<div class="w50">
+					<input type="text" name="" placeholder="Sobrenome">
+				</div><!-- w50 -->
+
+				<div class="w100">
+					<input type="email" name="" placeholder="Seu email">
+				</div><!-- w100 -->
+
+				<div class="w100">
+					<textarea placeholder="Digite sua mensagem aqui"></textarea>
+				</div><!-- w100 -->
+
+			</form>
+		</div><!-- w60 -->
+
+		<div class="w40 tags-form center">
+			<h2><i class="fa fa-comment"></i>&nbsp;Fale com nossa equipe</h2>
+			<p>Caso tenha alguma Duvida,
+			entre em contato</p>
+
+			<p class="tag"><i class="fa fa-phone-alt">&nbsp;(11) 97447-0877</i></p>
+
+			<p class="tag"><i class="fa fa-phone-alt">&nbsp;(11) 97447-0877</i></p>
+
+			<p class="tag"><i class="fa fa-phone-alt">&nbsp;(11) 97447-0877</i></p>
+
+		</div><!-- w40 -->
+
+	</div><!-- container -->
+	<div class="clear"></div>
+</section><!-- contato -->
+
+
+<section class="sessao6">
+	<div class="container">
+		<div class="w33">
+			<h2>Entre em contato</h2>
+			<p><i class="fa fa-map-pin">Rua Augusto - SP 242</i></p>
+			<p><i class="fa fa-phone">(11) 94374-3432</i></p>
+		</div><!-- w33 -->
+
+		<div class="w33">
+			<div class="nofloat">
+			<h2>Link De Parceiros</h2>
+			<a href="">DankiCode</a>
+			<a href="">W3School</a>
+			</div>
+		</div><!-- w33 -->
+
+		<div class="w33">
+			<h2>Conecte-se Conosco</h2>
+			<div class="group-icons">
+				<a href=""><i class="fab fa-facebook-square"></i></a>
+
+				<a href=""><i class="fab fa-instagram"></i></a>
+			</div>
+		</div><!-- w33 -->
+
+		<div class="clear"></div>
+	</div><!-- container -->
+</section><!-- sessao6 -->
+
+<footer>
+	<div class="center">
+		<h2>Deveniday</h2>
+		
+	</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Usado para abrirmos a aba menu com um clique usando jqery -->
+<script>
+	$('nav.menu-mobile h2').click(function(){
+		$('nav.menu-mobile ul').slideToggle();
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

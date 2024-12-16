@@ -1,0 +1,318 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+html, body{
+	height: 100%;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+.clear{
+	clear: both;
+}
+.center{
+	text-align: center;
+}
+.w60{
+	float: left;
+	width: 60%;
+}
+.w40{
+	float: left;
+	width: 40%;
+}
+.w50{
+	float: left;
+	width: 50%;
+}
+.w33{
+	float: left;
+	width: 33.3%;
+}
+header{
+	padding: 15px 0;
+	background-color: #edeef0;
+}
+.logo{
+	float: left;
+
+}
+.logo h2{
+	font-weight: 300;
+	font-size: 26px;
+}
+.menu-desktop{
+	float: right;
+}
+nav.menu-desktop ul{
+	position: relative;
+	top: 10px;
+}
+nav.menu-desktop li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 8px;
+}
+nav.menu-desktop a{
+	text-decoration: none;
+	color: #bbb;
+
+}
+nav.menu-desktop > ul > li > a.selected {
+	color: black;
+}
+nav.menu-desktop > ul > li > a:hover{
+	text-decoration: underline;
+}
+nav.menu-mobile{
+	display: none;
+	float: right;
+}
+nav.menu-mobile h2{
+	cursor: pointer;
+
+}
+nav.menu-mobile ul{
+	display: none;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	top: 65px;
+	left: 0;
+	z-index: 999;
+	text-align: center;
+}
+nav.menu-mobile li{
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+}
+nav.menu-mobile a{
+	color: black;
+	text-decoration: none;
+}
+
+.title-page{
+	padding: 30px;
+	width: 100%;
+	min-height: 200px;
+	background-size: cover;
+	background-position: center; 
+	position: relative;
+	z-index: 100;
+	background-image: url(../imagens/alberto.jpg); ;
+}
+
+.overlay-title{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.title-page .container{position: relative;
+padding-top: 20px;
+}
+
+.title-page h2{
+	color: #ebc41a;
+	font-size: 35px;
+	font-weight: normal;
+}
+.title-page p{
+	color: white;
+	font-size: 16px;
+	max-width: 800px;
+}
+
+
+section.contato{
+	padding: 30px 0;
+	min-height: 600px;
+}
+
+section.contato .formulario h2{
+	background-color: #DDDDDD;
+	text-align: center;
+	color: #ACAC9D;
+	font-size: 17px;
+	font-weight: normal;
+	border-left: 3px solid #CCCCCC;
+	padding: 4px 0; 
+	margin-bottom: 15px;
+}
+.formulario input[type=text],.formulario input[type=email]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+
+}
+.formulario .w50, .formulario .w100{
+	 padding-right: 10px;
+}
+
+.formulario textarea{
+	width: 100%;
+	height: 420px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	resize: vertical;
+	border-radius: 10px;
+}
+
+.formulario form{
+	margin-top: 10px;
+}
+.tags-form{
+	padding-left: 50px;
+}
+.tags-form h2{
+ font-weight: normal;
+}
+.tags-form p{
+ font-weight: lighter;
+}
+p.tag >i{
+	margin-top: 5px;
+}
+p.tag{
+
+	color: white;
+	background-color: #249B8F;
+	text-align: center;
+	margin-top: 8px;
+	padding: 8px 4px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+
+.sessao6{
+	background-color: #c2703a;
+	padding: 20px 0;
+	color: white;
+}
+.sessao6 h2{
+	font-weight: normal;
+	font-size: 23px;
+}
+.sessao6 p{
+	margin-top: 8px;
+	font-weight: lighter;
+	color: black;
+}
+
+
+.sessao6 .nofloat a{
+ display: block;
+ text-decoration: none;
+ color: black;
+ font-size: 20px;
+ padding: 5px;
+}
+
+
+.sessao6 .nofloat a:hover{
+
+text-decoration: underline;
+}
+.sessao6 .group-icons i{
+	font-size: 60px;
+	padding-top: 5px;
+	padding-left: 30px;
+	color: black;
+}
+
+
+footer{
+	padding: 20px 0; 
+	background-color: black;
+	color: white;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.box-icon{
+		float: none;
+	display: inline-block;
+	width: 75%;
+	padding: 0 25px;
+	margin-bottom: 20px;
+	}
+	.sessao3 .img-avatar{
+	vertical-align: top;
+	}
+
+	.sessao3 .avatar-box{
+	margin-top: 12px;
+
+	}
+	.sessao3 .container{
+
+	text-align: center;	
+	}
+	.equipe-container{
+	width: 100%;
+	}
+	.sobre-container{
+		width: 100%;
+		margin-top:60px;
+	}
+	.w50,.w33,.w60,.w40,.w100{
+		width: 100%;
+		padding: 4px 0;
+	}
+	.formulario input[type=text],.formulario input[type=email]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+
+	}
+	.sessao5-imgs{
+	float: none;
+	width: 100%;
+	padding: 20px 80px;
+
+	}
+	.padding-especial{
+
+	}
+	.sessao6{
+		text-align: center;
+	}
+
+
+
+	
+
+	
+}
+
+@media screen and (max-width: 500px){
+	nav.menu-mobile{
+		display: block;
+	}
+	nav.menu-desktop{
+		display: none;
+	}
+	nav.menu-mobile ul{
+		display: none;
+		background-color: #e6dfcc;
+	}
+	nav.menu-mobile li{
+		cursor: pointer;
+	}
+}
