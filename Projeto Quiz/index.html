@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <div class="title">
+        <h1> Quantas Luas o Planeta Terra Tem?</h1>
+    </div>
+
+    <form class="pergunta">
+        <div class="resposta">
+        <span>1</span>
+        <input type="radio" name="pergunta2" value="correta" />
+        <br />
+        </div>
+
+        <div class="resposta">
+            <span>2</span>
+            <input type="radio" name="pergunta2" value="Incorreta" />
+            <br />
+        </div>
+
+        <div class="resposta">
+            <span>3</span>
+            <input type="radio" name="pergunta2" value="Incorreta" />
+            <br />
+        </div>
+    </form>
+
+
+        <div class="title">
+            <h1> Quantas olhos tem uma pessoa?</h1>
+        </div>
+    
+        <form class="pergunta">
+            <div class="resposta">
+            <span>1</span>
+            <input type="radio" name="pergunta2" value="Incorreta" />
+            <br />
+            </div>
+    
+            <div class="resposta">
+                <span>2</span>
+                <input type="radio" name="pergunta2" value="correta" />
+                <br />
+            </div>
+    
+            <div class="resposta">
+                <span>3</span>
+                <input type="radio" name="pergunta2" value="Incorreta" />
+                <br />
+            </div>
+
+        </form>
+
+        <div class="title">
+            <h1> Quantas mãos tem uma pessoa?</h1>
+        </div>
+    
+        <form class="pergunta">
+            <div class="resposta">
+            <span>1</span>
+            <input type="radio" name="pergunta4" value="Incorreta" />
+            <br />
+            </div>
+    
+            <div class="resposta">
+                <span>2</span>
+                <input type="radio" name="pergunta4" value="correta" />
+                <br />
+            </div>
+    
+            <div class="resposta">
+                <span>3</span>
+                <input type="radio" name="pergunta4" value="Incorreta" />
+                <br />
+            </div>
+
+        </form>
+
+
+
+    <script>
+        var elementos = document.querySelectorAll('[type=radio]');
+
+        for (var i = 0; i < elementos.length; i++){
+            elementos[i].addEventListener('change', function(e){ 
+            let marcado = e.target.value;
+
+            if(marcado == "correta"){
+                let parentNode = e.target.parentNode;
+                parentNode.style.backgroundColor = 'green';
+
+                let els = parentNode.parentNode.querySelectorAll('[type=radio]');
+                
+                for(var n = 0; n < els.length; n++){
+                    els[n].disabled = true;
+                }
+            }
+            else if(marcado == "Incorreta"){
+                let parentNode = e.target.parentNode;
+                parentNode.style.backgroundColor = 'red';
+
+                let els = parentNode.parentNode.querySelectorAll('[type=radio]');
+                
+                for(var n = 0; n < els.length; n++){
+                    els[n].disabled = true;
+                }
+
+                let correta = parentNode.parentNode.querySelector('[value=correta]');
+                correta.parentNode.style.backgroundColor = 'green';
+            }
+        
+        })
+        }
+    </script>
+</body>
+</html>
